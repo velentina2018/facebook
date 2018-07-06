@@ -14,7 +14,7 @@ me1=requests.get(me)
 f1=requests.get(friends)
 print(me1.text)
 print(f1.text)
-'''
+
 def req_facebook(req):
     r= requests.get("https://graph.facebook.com/v2.9/" + req,{'access_token':token})
 
@@ -38,6 +38,6 @@ while True:
         print ("done")
         break
 pickle.dump(data,open("facebook_data.pkl","wb"))
-loaded_data= pickle.load(file=open("facebook_data.pkl"))'''
+loaded_data= pickle.load(file=open("facebook_data.pkl"))
 
 
